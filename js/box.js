@@ -12,6 +12,10 @@ function Box() {
   this.show = function() {
     rotateX(radians(this.radX));
     rotateY(radians(this.radY));
+    var dirY = (mouseY / height - 0.5) *2;
+    var dirX = (mouseX / width - 0.5) *2;
+    directionalLight(250, 250, 250, -0.0209, -0.62, 0.5);
+    ambientMaterial(66, 102, 138);
     box();
   }
 }

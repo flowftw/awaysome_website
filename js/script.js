@@ -8,5 +8,5 @@ function setup() {
 function draw() {
   background('rgba(0, 0, 0, 0)');
   mybox.rotate();
-  mybox.show()
+  mybox.show();
 }
