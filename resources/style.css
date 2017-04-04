@@ -34,3 +34,15 @@ body {
 	margin: 0;
 	text-align: center;
 }
+
+img.header-github {
+	width: 60px;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;	
+	content: url("github-mark-light.png");
+}
+
+img.header-github:hover {
+	/*background-image: url("github-mark.png");*/
+}
