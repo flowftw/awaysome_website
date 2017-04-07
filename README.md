@@ -1,3 +1,3 @@
 ### Website for https://awaysome.de
 
-just trying out some stuff... 
+Just playing around a little bit. ¯\_(ツ)_/¯
