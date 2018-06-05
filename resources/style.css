@@ -69,7 +69,7 @@ span.header-github:hover {
 }
 
 span.right-bottom {
-	font-family: 'Prompt-Thin', sans-serif;
+	font-family: 'Prompt-Light', sans-serif;
 	position: absolute;
 	color: white;
 	background-color: rgba(0, 0, 0, 0.7);
@@ -77,10 +77,8 @@ span.right-bottom {
 	right: 5vmin;
 	font-size: 1vmax;
 	text-align: center;
-	border-style: solid;
-	border-color: rgba(0, 0, 0, 0.7);
+	padding: 5px;
 	border-radius: 1vmax;
-	border-width: 5px;
 	opacity: 0.75;
 }
 
