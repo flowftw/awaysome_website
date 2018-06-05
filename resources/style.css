@@ -1,5 +1,20 @@
+@font-face {
+	font-family: "Prompt-Regular";
+	src: url('Prompt-Regular.ttf');
+}
+
+@font-face {
+	font-family: "Prompt-Thin";
+	src: url('Prompt-Thin.ttf');
+}
+
+@font-face {
+	font-family: "Prompt-Light";
+	src: url('Prompt-Light.ttf');
+}
+
 h1.header {
-	font-family: 'Prompt', sans-serif;
+	font-family: 'Prompt-Thin', sans-serif;
 	font-size: 6vmax;
 	font-weight: 100;
 	font-style: normal;
@@ -51,4 +66,39 @@ span.header-github {
 
 span.header-github:hover {
 	opacity: 1;
+}
+
+span.right-bottom {
+	font-family: 'Prompt-Thin', sans-serif;
+	position: absolute;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.7);
+	bottom: 5vmin;
+	right: 5vmin;
+	font-size: 1vmax;
+	text-align: center;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.7);
+	border-radius: 1vmax;
+	border-width: 5px;
+	opacity: 0.75;
+}
+
+span.right-bottom:hover {
+	opacity: 1;
+}
+
+div.datenschutz {
+	margin-left: 30%;
+	margin-right: 30%;
+	text-align: justify;
+	
+}
+
+div.datenschutz > h2, div.datenschutz > h3 {
+	font-family: 'Prompt-Regular', sans-serif;
+}
+
+div.datenschutz > p, div.datenschutz > a {
+	font-family: 'Prompt-Light', sans-serif;
 }
