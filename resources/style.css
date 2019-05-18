@@ -13,38 +13,33 @@
 	src: url('Prompt-Light.ttf');
 }
 
-h1.header {
-	font-family: 'Prompt-Thin', sans-serif;
-	font-size: 6vmax;
-	font-weight: 100;
-	font-style: normal;
-	color: white;
-	opacity: 1.0;
-}
-
-div.header-back {
-	background-color: rgba(0, 0, 0, 0.7);
-	top: 80%;
+div.header {
+	top: 40%;
 	left: 50%;
 	margin-right: -50%;
 	transform: translate(-50%, -50%);
 	position: absolute;
-	width: 50vmax;
-	height: 10vmax;
 	display:flex;
 	justify-content:center;
 	align-items:center;
 	border-radius: 6vmax;
+	width: 100%;
+}
+
+div.header svg {
+	height: 10vh;
+	width: 100%;
 }
 
 div.main {
 	background-color: #333333;
-	background-image: url("background4-small.jpg");
+	background-image: url("background5-small.jpg");
 	background-size: cover;
-	background-position-x: center;
+	background-position-x: center; 
 	background-position-y: center;
 	width: 100%;
 	height: 100%;
+	background-position: top;
 }
 
 body {
