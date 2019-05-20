@@ -1,4 +1,6 @@
 function animate() {
+    var headerElement = document.getElementById("header");
+    headerElement.style.visibility = 'visible';
     anime({
         targets: '.header path',
         strokeDashoffset: [anime.setDashoffset, 0],
@@ -10,4 +12,4 @@ function animate() {
     });
 }
 
-animate();
+window.onload = animate;
