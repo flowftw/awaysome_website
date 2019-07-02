@@ -4,11 +4,18 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="resources/style.css">
 	<script src="js/anime.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/blotter/blotter.min.js"></script>
+	<script src="js/blotter/channelSplitMaterial.js"></script>
+	<script src="js/blotter/fliesMaterial.js"></script>
+	<script src="js/blotter/liquidDistortMaterial.js"></script>
+	<script src="js/blotter/rollingDistortMaterial.js"></script>
+	<script src="js/blotter/slidingDoorMaterial.js"></script>
 </head>
 
 <body>
 	<div class="main">
-		<div id="header" class="header" style="visibility: hidden">
+		<!-- <div id="header" class="header" style="visibility: hidden">
 			<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
 				xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
 				xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -71,7 +78,8 @@
 					</g>
 				</g>
 			</svg>
-		</div>
+		</div> -->
+		<div id="header" class="header"></div>
 		<a style="display:block" href="https://github.com/flowftw/awaysome_website">
 			<span class="header-github"></span>
 		</a>
@@ -82,6 +90,40 @@
 		</a>
 	</div>
 	<script src="js/animation.js"></script>
+	<script>
+      var text = new Blotter.Text("Awaysome", {
+        family : "serif",
+        size : 120,
+        fill : "#171717"
+      });
+	  
+	  switch(Math.floor((Math.random() * 5) + 1)) {
+		case 1:
+			var material = new Blotter.ChannelSplitMaterial();
+			break;
+		case 2:
+			var material = new Blotter.FliesMaterial();
+			break;
+		case 3:
+			var material = new Blotter.LiquidDistortMaterial();
+			break;
+		case 4:
+			var material = new Blotter.RollingDistortMaterial();
+			break;
+		case 5:
+			var material = new Blotter.SlidingDoorMaterial();
+			break;
+		default:
+			console.log("Unbekannter Fall");
+			break;
+	  }
+
+      var blotter = new Blotter(material, { texts : text });
+
+      var scope = blotter.forText(text);
+
+      scope.appendTo($("#header"));
+    </script>
 </body>
 
 </html>
